@@ -1,0 +1,73 @@
+:root {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #340a48, #725a8e);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.key {
+    width: 90px;
+    height: 140px;
+    background: linear-gradient(to bottom, #fff, #e5e5e5);
+    border: 2px solid #222;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+}
+
+.key kbd {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.key span {
+    font-size: 16px;
+    color: #444;
+}
+
+.key:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.6);
+}
+
+.playing {
+    transform: scale(0.95);
+    background: linear-gradient(to bottom, #444, #111);
+    color: #fff;
+    box-shadow: 0 0 25px #e1c1ff;
+}
